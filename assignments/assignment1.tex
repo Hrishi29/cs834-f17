@@ -51,11 +51,10 @@
 
 \subsection*{Question}
 
-\begin{verbatim}
-1.   Suppose that, in an eﬀort to crawl web pages faster, you set up two crawling machines with diﬀerent starting seed URLs. Is this an eﬀective strategy for distributed crawling? Why or why not? .
-\end{verbatim}
 
-\clearpage
+1.   Suppose that, in an eﬀort to crawl web pages faster, you set up two crawling machines with diﬀerent starting seed URLs. Is this an eﬀective strategy for distributed crawling? Why or why not? .
+
+
 \subsection*{Answer}
 
 I think this is not a effective strategy for distributed crawling. Here the  machines are unable to share information with each other. Although the two machines are seeded with different URLs, this will result in alot of duplicated effort, as the two machines would eventually crawl many of the same URLs. This strategy could be made more effective by sharing the URL request queue between the two machines, thereby eliminating the duplicated effort.
@@ -70,9 +69,9 @@ I think this is not a effective strategy for distributed crawling. Here the  mac
 
 \subsection*{Question}
 
-\begin{verbatim}
+
 2.   How would you design a system to automatically enter data in to web forms in order to crawl deep Web pages? What measures would you use to make sure your crawler’s actions were not destructive(for instance, so that it doesn’t add random blog comments). .
-\end{verbatim}
+
 
 \subsection*{Answer}
 
@@ -95,13 +94,13 @@ used to identify wasteful queries and prune them.
 
 \subsection*{Question}
 
-\begin{verbatim}
+
 3. List five web services or sites that you use that appear to use search, not including web search engines. Describe the role of search for that service. Also describe whether the search is based on a database or grep style of matching, or if the search isusing some type of ranking.
-\end{verbatim}
+
 
 \subsection*{Answer}
 
-1. Alexa : I use this website to montor the website traffic, statistics and analytics. It uses the grep style of matching.
+ 1. Alexa : I use this website to montor the website traffic, statistics and analytics. It uses the grep style of matching.
 
 2. Youtube: It is based on index-database style matching. YouTube is essentially a search engine for videos. Not surprisingly, it uses a sophisticated ranking algorithm to surface content to viewers. If you want to gain a following and rank your videos higher in YouTube search, uploading fresh content is extremely important.
 
@@ -113,6 +112,137 @@ used to identify wasteful queries and prune them.
 
 
 \clearpage
+
+
+% =================================
+% 4th question
+% =================================
+
+\section*{4}
+
+\subsection*{Question}
+
+
+4. Think up and write down a small number of queries for a web search engine. Make sure that the queries vary in length (i.e., they are not all one word). Try to specify exactly what information you are looking for in some of the queries. Run these queries on two commercial web search engines and compare the top 10 results for each query by doing relevance judgments. Write a report that answers atleast the following questions: What is the precision of the results? What is the overlap between the results for the two search engines? Is one search engine clearly better than the other? If so, by how much? How do short queries perform compared to long queries?  
+
+
+\subsection*{Answer}
+
+The folllowing queries were run on Google and Bing web search engines.
+1. Query name: Washington - In this particular query I wanted to know about the Washington state. The overlap between the results for the two search engines is 3.
+
+\begin{table}[h]
+\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{ | c | c | }
+\hline
+\textbf{Search Engine} & \textbf{Precision}  \\
+\hline
+Google & 0.59 \\ 
+\hline
+Bing & 0.33 \\ 
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Precision results for the query}
+\label{table:q3calcs}
+\end{table} 
+
+2. Query name: Top 10 queries to test precision - In this query I wanted to know about the queries which can be used to test precision on different search engines. The overlap between the results for the two search engines is 1.
+
+\begin{table}[h]
+\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{ | c | c | }
+\hline
+\textbf{Search Engine} & \textbf{Precision}  \\
+\hline
+Google &  0.49\\ 
+\hline
+Bing & 0.28 \\ 
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Precision results for the query}
+\label{table:q3calcs}
+\end{table} 
+
+3. Query name: How to become a successful businessman? - In this query I was looking for the qualities to be a businessman. The overlap between the results for the two search engines is 6.
+
+\begin{table}[h]
+\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{ | c | c | }
+\hline
+\textbf{Search Engine} & \textbf{Precision}  \\
+\hline
+Google &  0.7 \\ 
+\hline
+Bing & 0.64 \\ 
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Precision results for the query}
+\label{table:q3calcs}
+\end{table} 
+
+4. Query name: Chinese dishes - In this query I was looking for some good chinese delicacies. The overlap between the results for the two search engines is 4.
+
+\begin{table}[h]
+\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{ | c | c | }
+\hline
+\textbf{Search Engine} & \textbf{Precision}  \\
+\hline
+Google &  0.69\\ 
+\hline
+Bing & 0.57 \\ 
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Precision results for the query}
+\label{table:q3calcs}
+\end{table} 
+
+5. Query name: Chinese dishes a person should definitely have in his life - In this query I was looking for some good chinese delicacies. The overlap between the results for the two search engines is 0.
+
+\begin{table}[h]
+\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{ | c | c | }
+\hline
+\textbf{Search Engine} & \textbf{Precision}  \\
+\hline
+Google &  0.4\\ 
+\hline
+Bing & 0.33 \\ 
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Precision results for the query}
+\label{table:q3calcs}
+\end{table} 
+
+From the precision results of the above queries, I think that Google search engine is better than Bing search engine. Also the short queries perform well than the long queries.  
+\clearpage
+
+% =================================
+% 5th question
+% =================================
+
+\section*{5}
+
+\subsection*{Question}
+
+
+5.Site search is another common application of search engines. In this case, search is restricted to the web pages at a given website. Compare site search to web search, vertical search, and enterprise search. 
+
+
+\subsection*{Answer}
+
+1. Sometimes we need something so insanely specific that a general keyword phrase doesn't really do it for you, especially for marketers on the hunt for a specific piece of content. Enter the Google site:search. This allows you to search just one domain -- not the entire internet -- for a particular search term. So, for instance, if you wanted to see what kind of content HubSpot, and only HubSpot, had on marketing automation, doing a site:search would limit the results to only HubSpot's marketing automation content.
+2. Site search can be contrasted with web search, which applies search technology to documents on the open web, enterprise search, which involves finding the required information in the huge variety of computer files scattered across a corporate intranet and vertical search, which focuses on a specific segment of online content.
 
 
 \end{document}
