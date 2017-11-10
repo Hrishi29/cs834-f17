@@ -514,7 +514,7 @@ from prettyprint import prettyprint
 krovetz = KrovetzStemmer()
 
 
-# Read result of 1_index
+# Read result of result.txt
 with open('result.txt', 'rb') as f:
     str_word_files_index = f.read()
     word_files_index =  json.loads(str_word_files_index)
@@ -557,11 +557,11 @@ from prettyprint import prettyprint
 dice_coef_t = 0.01
 stem_clusters = []
 
-# Read result of 1_2_index.txt
+# Read result of result.txt
 with open('result.txt', 'rb') as f1:
     word_files_index = json.loads(f1.read())
 
-    # Read result of 3_stemmed_words.csv
+    # Read result of stemmed.csv
     with open('stemmed.csv', 'rb') as f3:
         for stemmed_word, words in csv.reader(f3):
             words = words.split(', ')
